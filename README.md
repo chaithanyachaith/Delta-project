@@ -11,6 +11,7 @@ Push the Docker image to Docker Hub
 Achieve a repeatable and production-style CI process
 
 🔄 CI Workflow (High-Level)
+
 Developer
    |
    v
@@ -50,6 +51,7 @@ Registry: Docker Hub
 Source Control: GitHub
 
 📁 Project Structure
+
 .
 ├── Dockerfile
 ├── Jenkinsfile
@@ -62,6 +64,7 @@ Source Control: GitHub
 │   ├── wsgi.py
 │   └── asgi.py
 └── DL_Term/
+
 
 🐳 Docker Implementation
 Key confirms:
@@ -172,5 +175,7 @@ Deploy to Kubernetes (EKS / AKS / GKE)
 👨‍💻 Author
 
 Chaithanya
+
 DevOps & Cloud Enthusiast
+
 GitHub: https://github.com/chaithanyachaith
