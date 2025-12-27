@@ -6,6 +6,7 @@ pipeline {
         DOCKERHUB_CREDENTIALS = "docker-hub-credentials" // Jenkins credential ID
         DOCKERHUB_USERNAME = "chaithanya7995"
         DOCKERHUB_REPO = "django-images"
+        IMAGE_TAG = "${BUILD_NUMBER}"
     }
 
     stages {
