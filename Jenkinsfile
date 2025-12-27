@@ -15,7 +15,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/chaithanyachaith/Delta-project.git'
             }
         }
-        
+
         stage('Build Docker Image') {
             steps {
                 script {
@@ -42,4 +42,3 @@ pipeline {
             echo 'Pipeline finished!'
         }
     }
-}
