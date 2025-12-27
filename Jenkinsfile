@@ -5,7 +5,7 @@ pipeline {
         IMAGE_NAME = "django-delta"
         DOCKERHUB_CREDENTIALS = "docker-hub-credentials" // Jenkins credential ID
         DOCKERHUB_USERNAME = "chaithanya7995"
-        DOCKERHUB_REPO = "chaithanya7995/django-images"
+        DOCKERHUB_REPO = "django-images"
     }
 
     stages {
