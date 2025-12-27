@@ -24,7 +24,7 @@ pipeline {
             }
         }
 
-        }
+        
         stage('Push to Docker Hub') {
             steps {
                 script {
@@ -42,3 +42,4 @@ pipeline {
             echo 'Pipeline finished!'
         }
     }
+}
