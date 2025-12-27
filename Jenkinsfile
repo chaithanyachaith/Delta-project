@@ -19,16 +19,22 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build("${DOCKERHUB_USERNAME}/${DOCKERHUB_REPO}:latest")
+                    docker.build("${DOCKERHUB_USERNAME}/${DOCKERHUB_REPO}:latest:${IMAGE_TAG}")
                 }
             }
         }
 
+        stage('Run Tests') {
+            steps {
+                sh 'python manage.py test'
+            }
+        }
         stage('Push to Docker Hub') {
             steps {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', "${DOCKERHUB_CREDENTIALS}") {
-                        docker.image("${DOCKERHUB_USERNAME}/${DOCKERHUB_REPO}:latest").push()
+                        docker.image("${DOCKERHUB_USERNAME}/${DOCKERHUB_REPO}:latest:${IMAGE_TAG}").push()
+                        docker.image("${DOCKERHUB_USERNAME}/${DOCKERHUB_REPO}:latest:${IMAGE_TAG}").push("latest")
                     }
                 }
             }
