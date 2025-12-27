@@ -152,12 +152,6 @@ Jenkins build-based tags (optional improvement)
 Pull Image
 docker pull chaithanya7995/django-images:latest
 
-🌐 Application Access
-
-Once the container is running:
-
-http://localhost:8000
-
 ✅ Achievements
 
 ✔ Dockerized Django application
