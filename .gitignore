@@ -1,0 +1,19 @@
+# Virtual environment
+chaithanya/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Django
+db.sqlite3
+*.log
+staticfiles/
+
+# Environment variables
+.env
+
+# Editor
+.vscode/
+
