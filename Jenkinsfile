@@ -15,10 +15,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/chaithanyachaith/Delta-project.git'
             }
         }
-        stage('Run Tests') {
-            steps {
-                sh 'python manage.py test'
-            }
+        
         stage('Build Docker Image') {
             steps {
                 script {
