@@ -5,7 +5,7 @@ A complete CI automation project that demonstrates how to build, containerize, a
 📌 Project Objective
 
 To automate the following workflow:
-Pull source code from GitHub
+Pull source code from GitHub for automation.
 Build a Docker image for a Django application
 Push the Docker image to Docker Hub
 Achieve a repeatable and production-style CI process
