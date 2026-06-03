@@ -21,5 +21,5 @@ from DL_Term.views import health
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('health/', health),
-    path('/', health), 
+    path('/', health),
 ]
